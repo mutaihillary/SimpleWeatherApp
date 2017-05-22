@@ -7,12 +7,13 @@
     android:padding="16dp"
     tools:context="com.example.android.simpleweatherapp.MainActivity">
     android:id="@+id/rootContainer">
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="16dp"
         android:text="To know what&apos;s the weather in your city, Enter your city name below"
-        android:id="@+id/textView"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp" />
 
@@ -83,11 +84,12 @@
         android:id="@+id/imageViewicon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get Weather"
-        android:id="@+id/button"
-        android:onClick="OnGetWeatherClick" />
+        android:onClick="OnGetWeatherClick"
+        android:text="Get Weather" />
 
 </LinearLayout>
